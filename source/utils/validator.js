@@ -1,4 +1,4 @@
-const Usuario = require('../api/models/usuarios.model');
+const Usuario = require('../models/usuarios.model');
 
 // regex email
 

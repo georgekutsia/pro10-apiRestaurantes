@@ -1,7 +1,7 @@
 const Usuario = require("../models/usuarios.model");
 const bcrypt = require ("bcrypt");
-const {validateEmail, validatePassword, validateEmailDB} = require ("../../utils/validator");
-const {generateSign} = require("../../utils/jwt");
+const {validateEmail, validatePassword, validateEmailDB} = require ("../utils/validator");
+const {generateSign} = require("../utils/jwt");
 
 
 const register = async (req,res)=>{
@@ -74,4 +74,4 @@ const getUsuarios = async (req, res) => {
 //   }
 // };
 
-module.exports = { register, login, getUsuarios, deleteUsuarios, getUsuariosMayoresDeEdad };
+module.exports = { register, login, getUsuarios, deleteUsuarios };

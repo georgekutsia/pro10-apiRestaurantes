@@ -1,7 +1,7 @@
 const express = require("express");
 const {getRestaurante, postRestaurante, updateRestaurante, deleteRestaurante} = require("../controllers/restaurantes.controllers")
 
-const vidRouter = express.Router();
+const restRouter = express.Router();
 
 restRouter.get("/", getRestaurante);
 restRouter.post("/", postRestaurante);

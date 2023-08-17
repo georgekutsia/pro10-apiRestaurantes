@@ -56,7 +56,8 @@ const login = async (req,res) => {
 
 const getUsuarios = async (req, res) => {
   try {
-    const allUsuarios = await Usuario.find().populate("favorito");
+    const allUsuarios = await Usuario.find()
+    // .populate("favorito");
     console.log(allUsuarios)
     return res.status(200).json(allUsuarios);
   } catch (error) {

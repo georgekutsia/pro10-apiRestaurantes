@@ -9,7 +9,18 @@ const getRestaurante = async(req,res)=>{
     return res.status(500).json(error)
   }
 }
-
+const getRestauranteById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const restaurante = await Restaurante.findById(id);
+    if (!restaurante) {
+      return res.status(404).json({ message: "Restaurante no encontrado" });
+    }
+    return res.status(200).json(restaurante);
+  } catch (error) {
+    return res.status(500).json(error);
+  }
+};
 const postRestaurante = async (req, res) => {
   try {
     const newRestaurante = req.body;
@@ -49,4 +60,4 @@ const deleteRestaurante = async (req, res) =>{
   }
 }
 
-module.exports = { getRestaurante, postRestaurante, updateRestaurante, deleteRestaurante};
+module.exports = { getRestaurante, postRestaurante, updateRestaurante, deleteRestaurante,getRestauranteById};

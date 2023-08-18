@@ -17,7 +17,6 @@ const validatePassword = (pass) => {
 const validateEmailDB = async (emailUser) => {
   try {
     const usuario = await Usuario.find({ email: emailUser });
-    console.log(usuario.length);
     return usuario.length;
   } catch (error) {
     console.log(error);

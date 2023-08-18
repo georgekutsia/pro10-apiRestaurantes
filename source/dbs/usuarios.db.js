@@ -118,10 +118,10 @@ const usuarios = [
     age: 27,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343395/restaurantes%20y%20usuarios/usuarios/actores-espanoles-social_ovlmgb.jpg",
     favorite: [
-      "64df31ec441ad17d08c1f7c9",
-      "64df31ec441ad17d08c1f7cb",
-      "64df31ec441ad17d08c1f7cc",
-      "64df31ec441ad17d08c1f7ce",
+"64df31ec441ad17d08c1f7c9",
+"64df31ec441ad17d08c1f7cb",
+"64df31ec441ad17d08c1f7cc",
+"64df31ec441ad17d08c1f7ce",
     ],
   },
   {

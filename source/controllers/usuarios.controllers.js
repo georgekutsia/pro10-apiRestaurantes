@@ -71,7 +71,7 @@ const updateUsuarios = async (req, res) => {
 
 const getUsuarios = async (req, res) => {
   try {
-    const allUsuarios = await Usuario.find().populate("favorito");
+    const allUsuarios = await Usuario.find().populate("favorite");
     return res.status(200).json(allUsuarios);
   } catch (error) {
     return res.status(500).json(error);

@@ -2,6 +2,7 @@ const Usuario = require("../models/usuarios.model");
 const bcrypt = require ("bcrypt");
 const {validateEmail, validatePassword, validateEmailDB} = require ("../utils/validator");
 const {generateSign} = require("../utils/jwt");
+const { sendRegistrationEmail } = require("../utils/mailer.config");
 
 
 const register = async (req,res)=>{
@@ -18,6 +19,8 @@ const register = async (req,res)=>{
   }
   newUsuario.password = bcrypt.hashSync(newUsuario.password, 15);
   const createdUsuario = await newUsuario.save();
+    sendRegistrationEmail(newUsuario);
+
   return res.status(201).json(createdUsuario);
 } catch (error){
     return res.status(530).json(error)

@@ -8,7 +8,7 @@ const restauranteSchema = new Schema(
         description:{type:String, required:true, minLength:[10, "La descripción debe tener al menos 10 caracteres"], maxLength:[500, "La descripción no puede ecceder los 500 caracteres"] },
         city:{type:String, required:true, trim:true},
         score:{type:Number, required:true, min:1, max:10},
-        coments:[{type:String, required:false, minLength:[3, "El comentario debe tener al menos 3 caractereres"], maxLength:[200, "El comentario no puede ecceder los 200 caracteres"]}]
+        comments:[{type:String, required:false, minLength:[3, "El comentario debe tener al menos 3 caractereres"], maxLength:[200, "El comentario no puede ecceder los 200 caracteres"]}]
       },{
         timestamps:true,
         toJSON:{

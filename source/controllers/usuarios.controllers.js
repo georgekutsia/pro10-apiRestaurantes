@@ -41,6 +41,21 @@ const login = async (req,res) => {
     }
 }
 
+const updateUsuarios = async (req, res) => {
+  try {
+    const {id} = req.params;
+    const updateUsuario = new Usuario(req.body);
+    updateUsuario.id = id;
+    const updatedInfo = await Usuario.findByIdAndUpdate(id, updateUsuario, {new: true})
+    if (!updatedInfo){
+      return res.status(404).json({message: "No encontrado :("});
+    }
+    return res.status(200).json(updatedInfo);
+  } catch (error) {
+    return res.status(500).json(error);
+  }
+}
+
   const deleteUsuarios = async (req, res) =>{
     try {
       const {id} = req.params;
@@ -56,9 +71,7 @@ const login = async (req,res) => {
 
 const getUsuarios = async (req, res) => {
   try {
-    const allUsuarios = await Usuario.find()
-    // .populate("favorito");
-    console.log(allUsuarios)
+    const allUsuarios = await Usuario.find().populate("favorito");
     return res.status(200).json(allUsuarios);
   } catch (error) {
     return res.status(500).json(error);
@@ -75,4 +88,4 @@ const getUsuarios = async (req, res) => {
 //   }
 // };
 
-module.exports = { register, login, getUsuarios, deleteUsuarios };
+module.exports = { register, login, getUsuarios, deleteUsuarios, updateUsuarios };

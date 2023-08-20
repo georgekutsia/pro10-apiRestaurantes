@@ -8,7 +8,8 @@
     "dev": "nodemon index.js",
     "start": "node index.js",
     "seeds": "node ./source/seeds/restaurantes.seeds.js",
-    "users": "node ./source/seeds/usuarios.seeds.js"
+    "users": "node ./source/seeds/usuarios.seeds.js",
+    "comentarios": "node ./source/seeds/comentarios.seeds.js"
   },
   "repository": {
     "type": "git",

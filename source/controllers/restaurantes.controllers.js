@@ -3,7 +3,7 @@ const Restaurante = require("../models/restaurantes.model");
 
 const getRestaurante = async(req,res)=>{
   try {
-    const allRestaurantes = await Restaurante.find();
+    const allRestaurantes = await Restaurante.find().populate("comments");
     return res.status(200).json(allRestaurantes)
   } catch (error) {
     return res.status(500).json(error)
@@ -12,7 +12,7 @@ const getRestaurante = async(req,res)=>{
 const getRestauranteById = async (req, res) => {
   try {
     const { id } = req.params;
-    const restaurante = await Restaurante.findById(id);
+    const restaurante = await Restaurante.findById(id).populate("comments")
     if (!restaurante) {
       return res.status(404).json({ message: "Restaurante no encontrado" });
     }

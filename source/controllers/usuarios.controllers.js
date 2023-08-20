@@ -74,16 +74,17 @@
 
   const getUsuarios = async (req, res) => {
     try {
-      const allUsuarios = await Usuario.find().populate("favorite");
+      const allUsuarios = await Usuario.find().populate("comments").populate("favorite")
       return res.status(200).json(allUsuarios);
     } catch (error) {
       return res.status(500).json(error);
     }
   };
+
 const detailUsuario = async (req, res) => {
   try {
     const { id } = req.params;
-    const usuario = await Usuario.findById(id).populate("favorite");
+    const usuario = await Usuario.findById(id).populate("comments").populate("favorite")
     if (!usuario) {
       return res.status(404).json({ message: "Usuario no encontrado" });
     }

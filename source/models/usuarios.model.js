@@ -10,6 +10,7 @@ const usuarioSchema = new Schema(
     age: { type: Number, required: true, min:[12, "menores de 12 años no pueden registrarse en esta página web"] },
     img: { type: String, required: false },
     favorite: [{ type: Schema.Types.ObjectId, ref: "restaurante" }],
+    comments:[{ type: Schema.Types.ObjectId, ref: "comentarios" }],
   },
   {
     timestamps: true,

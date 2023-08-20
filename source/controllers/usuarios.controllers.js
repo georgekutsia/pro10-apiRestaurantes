@@ -103,4 +103,38 @@ const detailUsuario = async (req, res) => {
   //   }
   // };
 
-  module.exports = { register, login, getUsuarios, deleteUsuarios, updateUsuarios, detailUsuario };
+const addToFavorites = async (req, res) => {
+  try {
+    const { restId } = req.params;
+    const { userId } = req.body;
+
+    const user = await Usuario.findByIdAndUpdate(
+      userId,
+      { $addToSet: { favorite: restId } },
+      { new: true }
+    );
+
+    return res.status(200).json(user);
+  } catch (error) {
+    return res.status(500).json(error);
+  }
+};
+const deleteFromFavorites = async (req, res) => {
+  try {
+    const { restId } = req.params;
+    const { userId } = req.body;
+
+    const user = await Usuario.findByIdAndUpdate(
+      userId,
+      { $pull: { favorite: restId } }, // Usar $pull para eliminar el elemento del array
+      { new: true }
+    );
+
+    return res.status(200).json(user);
+  } catch (error) {
+    return res.status(500).json(error);
+  }
+};
+
+
+  module.exports = { register, login, getUsuarios, deleteUsuarios, updateUsuarios, detailUsuario, addToFavorites, deleteFromFavorites };

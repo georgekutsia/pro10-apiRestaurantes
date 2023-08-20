@@ -1,5 +1,6 @@
 const Comentarios = require("../models/comentarios.model");
 const Usuario = require("../models/usuarios.model");
+const Restaurant = require("../models/restaurantes.model");
 
 const getComentarios = async(req,res)=>{
   try {
@@ -30,19 +31,28 @@ const postComentario = async (req, res) => {
     const created = await createdComentario.save();
 
     const userId = req.params.id;
+    const restaurantId = req.body.restaurantId;
 
     const usuario = await Usuario.findById(userId);
     if (!usuario) {
       return res.status(404).json({ message: "Usuario no encontrado" });
     }
-    usuario.comments.push(created._id);
+    usuario.comments.push(created.id);
     await usuario.save();
+
+    const restaurante = await Restaurant.findById(restaurantId);
+    if (!restaurante) {
+      return res.status(404).json({ message: "Restaurante no encontrado" });
+    }
+    restaurante.comments.push(created.id);
+    await restaurante.save();
 
     return res.status(200).json(created);
   } catch (error) {
     return res.status(500).json(error);
   }
-}
+};
+
 
 const updateComentario = async (req, res) => {
   try {

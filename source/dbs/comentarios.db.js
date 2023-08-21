@@ -1,4 +1,44 @@
 const comentarios = [
+    {
+    score: 1,
+    comments: "¡Parece que el chef intentó hacer una obra de arte abstracta en mi plato! No comas aquí si valoras tu paladar.",
+  },
+  {
+    score: 2,
+    comments: "La comida fue tan mala que mi estómago está considerando demandarme por abuso gastronómico.",
+  },
+  {
+    score: 1,
+    comments: "Pedí una hamburguesa y me trajeron un misterioso objeto no identificado entre dos panes. Ni Indiana Jones podría descifrar esto.",
+  },
+  {
+    score: 2,
+    comments: "El servicio fue tan lento que los camareros se disculparon diciendo que estaban siguiendo el horario de la siesta española.",
+  },
+  {
+    score: 1,
+    comments: "Mis papilas gustativas acaban de presentar una queja formal. Esto no es comida, es un experimento fallido de laboratorio.",
+  },
+  {
+    score: 2,
+    comments: "Este lugar debe estar patrocinado por una compañía de comida para gatos, porque eso es lo que me sirvieron. ¡Meow!",
+  },
+  {
+    score: 1,
+    comments: "La comida era tan mala que incluso los mosquitos se negaron a picarme después de que la probé.",
+  },
+  {
+    score: 2,
+    comments: "Pedí sushi y me dieron algo que parecía más una versión triste de un barco pirata. Ni Jack Sparrow lo comería.",
+  },
+  {
+    score: 1,
+    comments: "Tienen una placa especial en el menú llamada 'La Sorpresa'. Bueno, la sorpresa es que no tienes idea de lo que estás comiendo.",
+  },
+  {
+    score: 2,
+    comments: "El restaurante estaba tan oscuro que tuve que usar mi linterna para encontrar el tenedor. Incluso así, no ayudó a la comida.",
+  },
   {
     score: 8,
     comments: "¡Excelente lugar para comer!",

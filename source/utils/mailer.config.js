@@ -18,11 +18,11 @@ module.exports.sendRegistrationEmail = (user) => {
       to: user.email,
       subject: `Bienvenido a Restaumanía ${user.name}!`,
       html: `
-        <h3>Hola ${user.name}!</h3>
+        <h3>Espectaculaar ${user.name}!</h3>
+        <img src="https://res.cloudinary.com/dxnzcewsy/image/upload/v1692574002/restaurantes%20y%20usuarios/usuarios/Sujeto1_qv6nml.png" width:300/>
         ...
         <p>Nos alegra tenerte con nosotros y que quieras compartir tu opinión sobre tu aventura culinaria</p>  
         <p>Si tienes cualquier pregunta no dudes en contactarnos a este mismo mail</p>  
-        <img src="https://res.cloudinary.com/dxnzcewsy/image/upload/v1692364085/restaurantes%20y%20usuarios/usuarios/Sujeto_oxbow9.png" width:300/>
         `,
     })
     .then(() => {

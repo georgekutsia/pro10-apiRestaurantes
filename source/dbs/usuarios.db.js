@@ -5,8 +5,8 @@ const usuarios = [
     password: "Abc12345",
     age: 25,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343396/restaurantes%20y%20usuarios/usuarios/Stunning-Celebrity-Female-Faces-in-the-World_nhyv1v.jpg ",
-    favorite: ["64df31ec441ad17d08c1f7b7"],
-    comments:["64e1404c2a0cd16e552f0404"]
+    favorite: ["64e2c297fb31fa6ecb64ac74"],
+    comments: ["64e2c48de160ac8eead07c74", "64e2c48de160ac8eead07c75"],
   },
   {
     name: "Ana Lopez",
@@ -14,8 +14,8 @@ const usuarios = [
     password: "Xyz98765",
     age: 30,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343395/restaurantes%20y%20usuarios/usuarios/hipertextual-caidos-cielo-actores-actrices-menos-problematicos-hollywood-2019277810_sgnnf4.webp",
-    favorite: ["64df31ec441ad17d08c1f7b8"],
-    comments:["64e1404c2a0cd16e552f0404","64e1404c2a0cd16e552f0406"]
+    favorite: ["64e2c297fb31fa6ecb64ac7d"],
+    comments: ["64e2c48de160ac8eead07c7b"],
   },
   {
     name: "Carlos Rodriguez",
@@ -23,8 +23,8 @@ const usuarios = [
     password: "Mno78901",
     age: 28,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692351510/restaurantes%20y%20usuarios/usuarios/will-smith-1-e1692140738581_brb75j.webp",
-    favorite: ["64df31ec441ad17d08c1f7c2"],
-    comments:[]
+    favorite: ["64e2c297fb31fa6ecb64ac80"],
+    comments: ["64e2c48de160ac8eead07c7a"],
   },
   {
     name: "María Gonzalez",
@@ -32,8 +32,8 @@ const usuarios = [
     password: "Pqr23456",
     age: 22,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343395/restaurantes%20y%20usuarios/usuarios/phalbm25346011_w472h265c1_ofdofo.webp",
-    favorite: [],
-    comments:[]
+    favorite: ["64e2c297fb31fa6ecb64ac74"],
+    comments: ["64e2c48de160ac8eead07c77"],
   },
   {
     name: "Luis Martinez",
@@ -41,8 +41,8 @@ const usuarios = [
     password: "Fgh78901",
     age: 31,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343395/restaurantes%20y%20usuarios/usuarios/GettyImages-1445627761_20_1_qkxzkb.webp ",
-    favorite: [],
-    comments:[]
+    favorite: ["64e2c297fb31fa6ecb64ac80"],
+    comments: ["64e2c48de160ac8eead07c76", "64e2c48de160ac8eead07c7c"],
   },
   {
     name: "Elena García",
@@ -51,7 +51,7 @@ const usuarios = [
     age: 27,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343395/restaurantes%20y%20usuarios/usuarios/ZuAIKKN_be0ji8.jpg",
     favorite: [],
-    comments:[]
+    comments: ["64e2c48de160ac8eead07c85", "64e2c48de160ac8eead07c87"],
   },
   {
     name: "Andrés Torres",
@@ -59,8 +59,8 @@ const usuarios = [
     password: "Lmn78901",
     age: 29,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343395/restaurantes%20y%20usuarios/usuarios/jqlcici_yji5f7.webp",
-    favorite: ["64df31ec441ad17d08c1f7b8"],
-    comments:[]
+    favorite: ["64e2c297fb31fa6ecb64ac74"],
+    comments: ["64e2c48de160ac8eead07c86"],
   },
   {
     name: "Tim McIlrath",
@@ -68,8 +68,8 @@ const usuarios = [
     password: "Lmn78901",
     age: 54,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692351775/restaurantes%20y%20usuarios/usuarios/JLEkvgvaWFQrmbGPBDJ7iX_i65gte.jpg",
-    favorite: ["64df31ec441ad17d08c1f7b8"],
-    comments:[]
+    favorite: ["64e2c297fb31fa6ecb64ac79", "64e2c48de160ac8eead07c7c"],
+    comments: ["64e2c48de160ac8eead07c84"],
   },
   {
     name: "Sofía Ramos",
@@ -77,17 +77,26 @@ const usuarios = [
     password: "Opq23456",
     age: 24,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343395/restaurantes%20y%20usuarios/usuarios/frases-actores-wide_webp_t53uor.webp",
-    favorite: [],
-    comments:[]
+    favorite: ["64e2c297fb31fa6ecb64ac7b"],
+    comments: ["64e2c48de160ac8eead07c75", "64e2c48de160ac8eead07c7d"],
   },
   {
     name: "Sergio Pitel",
-    email: "sergio@example.com",
-    password: "vivaangular",
+    email: "Sergio@example.com",
+    password: "Elmejorgrupo2023",
     age: 26,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343394/restaurantes%20y%20usuarios/usuarios/1647447980708_kdm3b8.jpg",
-    favorite: ["64df31ec441ad17d08c1f7c2"],
-    comments:[]
+    favorite: [
+      "64e2c297fb31fa6ecb64ac74",
+      "64e2c297fb31fa6ecb64ac77",
+      "64e2c297fb31fa6ecb64ac86",
+    ],
+    comments: [
+      "64e2c48de160ac8eead07c6e",
+      "64e2c48de160ac8eead07c6f",
+      "64e2c48de160ac8eead07c71",
+      "64e2c48de160ac8eead07c72",
+    ],
   },
   {
     name: "Laura Fernández",
@@ -95,8 +104,8 @@ const usuarios = [
     password: "Uvw23456",
     age: 32,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343395/restaurantes%20y%20usuarios/usuarios/290329_282674_aa42s8.jpg ",
-    favorite: ["64df31ec441ad17d08c1f7c4", "64df31ec441ad17d08c1f7c5"],
-    comments:[]
+    favorite: ["64e2c297fb31fa6ecb64ac7d"],
+    comments: ["64e2c48de160ac8eead07c76", "64e2c48de160ac8eead07c84"],
   },
   {
     name: "Ricardo Ortega",
@@ -104,8 +113,8 @@ const usuarios = [
     password: "Xyz23456",
     age: 23,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343395/restaurantes%20y%20usuarios/usuarios/descarga_dkmxvr.jpg",
-    favorite: ["64df31ec441ad17d08c1f7c6"],
-    comments:[]
+    favorite: ["64e2c297fb31fa6ecb64ac74"],
+    comments: ["64e2c48de160ac8eead07c7d"],
   },
   {
     name: "Isabel Navarro",
@@ -113,8 +122,8 @@ const usuarios = [
     password: "Abc34567",
     age: 28,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343395/restaurantes%20y%20usuarios/usuarios/actores-que-desaparecieron-696x390_it5alz.jpg ",
-    favorite: ["64df31ec441ad17d08c1f7c7"],
-    comments:[]
+    favorite: [],
+    comments: ["64e2c48de160ac8eead07c75", "64e2c48de160ac8eead07c87"],
   },
   {
     name: "Fernando Vargas",
@@ -122,8 +131,8 @@ const usuarios = [
     password: "Def34567",
     age: 29,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343394/restaurantes%20y%20usuarios/usuarios/24148_ye4m2k.webp ",
-    favorite: ["64df31ec441ad17d08c1f7bd", "64df31ec441ad17d08c1f7bd"],
-    comments:[]
+    favorite: ["64e2c297fb31fa6ecb64ac74", "64e2c297fb31fa6ecb64ac77"],
+    comments: ["64e2c48de160ac8eead07c77", "64e2c48de160ac8eead07c83"],
   },
   {
     name: "Carmen Morales",
@@ -131,8 +140,8 @@ const usuarios = [
     password: "Ghi34567",
     age: 27,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343395/restaurantes%20y%20usuarios/usuarios/actores-espanoles-social_ovlmgb.jpg",
-    favorite: [ "64df31ec441ad17d08c1f7c9", "64df31ec441ad17d08c1f7cb", "64df31ec441ad17d08c1f7cc", "64df31ec441ad17d08c1f7ce",],
-    comments:[]
+    favorite: [],
+    comments: ["64e2c48de160ac8eead07c7e", "64e2c48de160ac8eead07c82"],
   },
   {
     name: "Javier Cordero",
@@ -140,17 +149,17 @@ const usuarios = [
     password: "Jkl34567",
     age: 31,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343394/restaurantes%20y%20usuarios/usuarios/113928_rtua2g.webp ",
-    favorite: ["64df31ec441ad17d08c1f7bd"],
-    comments:[]
+    favorite: [],
+    comments: ["64e2c48de160ac8eead07c75"],
   },
   {
     name: "Jose Antonio García Arencón",
     email: "jose@example.com",
-    password: "estapromociondealumnoseslamejor",
+    password: "Atope1234",
     age: 29,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343395/restaurantes%20y%20usuarios/usuarios/1659601185141_lbnsxw.jpg",
-    favorite: ["64df31ec441ad17d08c1f7bf", "64df31ec441ad17d08c1f7c9"],
-    comments:[]
+    favorite: ["64e2c297fb31fa6ecb64ac74"],
+    comments: ["64e2c48de160ac8eead07c78", "64e2c48de160ac8eead07c7f"],
   },
   {
     name: "Gabriel Mendoza",
@@ -158,8 +167,8 @@ const usuarios = [
     password: "Pqr34567",
     age: 33,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343394/restaurantes%20y%20usuarios/usuarios/164329_qi4fba.webp",
-    favorite: ["64df31ec441ad17d08c1f7c0"],
-    comments:[]
+    favorite: ["64e2c297fb31fa6ecb64ac77"],
+    comments: ["64e2c48de160ac8eead07c79", "64e2c48de160ac8eead07c89"],
   },
   {
     name: "Valeria Medina",
@@ -167,8 +176,14 @@ const usuarios = [
     password: "Stu34567",
     age: 25,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343394/restaurantes%20y%20usuarios/usuarios/5374711_kcpv2z.jpg ",
-    favorite: ["64df31ec441ad17d08c1f7c1"],
-    comments:[]
+    favorite: [],
+    comments: [
+      "64e2c48de160ac8eead07c76",
+      "64e2c48de160ac8eead07c8a",
+      "64e2c48de160ac8eead07c8a",
+      "64e2c48de160ac8eead07c8a",
+      "64e2c48de160ac8eead07c8a",
+    ],
   },
   {
     name: "Emilio Robles",
@@ -176,8 +191,12 @@ const usuarios = [
     password: "Vwx34567",
     age: 28,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343394/restaurantes%20y%20usuarios/usuarios/16904462676155_taykg2.jpg ",
-    favorite: ["64df31ec441ad17d08c1f7b8", "64df31ec441ad17d08c1f7ba"],
-    comments:[]
+    favorite: ["64e2c297fb31fa6ecb64ac78", "64e2c297fb31fa6ecb64ac79"],
+    comments: [
+      "64e2c48de160ac8eead07c75",
+      "64e2c48de160ac8eead07c80",
+      "64e2c48de160ac8eead07c81",
+    ],
   },
 ];
 

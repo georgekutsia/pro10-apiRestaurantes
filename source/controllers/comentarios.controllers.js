@@ -30,8 +30,8 @@ const postComentario = async (req, res) => {
     const createdComentario = new Comentarios(newComentario);
     const created = await createdComentario.save();
 
-    const userId = req.params.id;
-    const restaurantId = req.body.restaurantId;
+    const userId = req.body.userId;
+    const restaurantId = req.params.id;
 
     const usuario = await Usuario.findById(userId);
     if (!usuario) {

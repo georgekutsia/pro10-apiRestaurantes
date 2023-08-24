@@ -19,7 +19,8 @@
     }
     newUsuario.password = bcrypt.hashSync(newUsuario.password, 15);
     const createdUsuario = await newUsuario.save();
-      sendRegistrationEmail(newUsuario);
+
+    sendRegistrationEmail(newUsuario);
 
     return res.status(201).json(createdUsuario);
   } catch (error){
@@ -37,7 +38,8 @@
           if (!bcrypt.compareSync(req.body.password, usuarioInfo.password)){
               return res.status(404).json({message: "Contraseña o Mail incorrectos"})
           }
-          const token = generateSign(usuarioInfo._id, usuarioInfo.email);
+          const token = generateSign(usuarioInfo.id, usuarioInfo.email);
+          console.log("el id usuarioinfo", usuarioInfo.id);
           return res.status(200).json({usuario:usuarioInfo, token:token})
       } catch(error){
           return res.status(500).json(error)

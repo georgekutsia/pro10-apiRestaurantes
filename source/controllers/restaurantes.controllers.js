@@ -6,7 +6,7 @@ const getRestaurante = async(req,res)=>{
     const allRestaurantes = await Restaurante.find().populate("comments");
     return res.status(200).json(allRestaurantes)
   } catch (error) {
-    return res.status(500).json(error)
+    return res.status(500).json(error)  
   }
 }
 const getRestauranteById = async (req, res) => {

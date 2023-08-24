@@ -9,7 +9,8 @@
     "start": "node index.js",
     "seeds": "node ./source/seeds/restaurantes.seeds.js",
     "users": "node ./source/seeds/usuarios.seeds.js",
-    "comentarios": "node ./source/seeds/comentarios.seeds.js"
+    "comentarios": "node ./source/seeds/comentarios.seeds.js",
+    "comidas": "node ./source/seeds/comidas.seeds.js"
   },
   "repository": {
     "type": "git",

@@ -17,7 +17,7 @@ const restauranteSchema = new Schema(
         toJSON:{
       transform: (doc, ret) => {
         ret.id = ret._id;
-        delete ret._id;
+        // delete ret._id;   si borro esto, no aparece el id normal, no entiendo naaaadddaaa 4 horas con esta mierda
         delete ret.__v;
         return ret;
       },

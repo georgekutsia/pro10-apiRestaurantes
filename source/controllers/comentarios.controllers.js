@@ -40,6 +40,7 @@ const postComentario = async (req, res) => {
     usuario.comments.push(created.id);
     await usuario.save();
 
+    
     const restaurante = await Restaurant.findById(restaurantId);
     if (!restaurante) {
       return res.status(404).json({ message: "Restaurante no encontrado" });
@@ -74,6 +75,7 @@ const deleteComentario = async (req, res) =>{
     const {id} = req.params;
     const deleteComentario = await Comentarios.findByIdAndDelete(id)
     if(!deleteComentario){
+      console.log(id)
       return res.status(418).json({message: "¿Que haces?"})
     }
     return res.status(200).json(deleteComentario)
@@ -82,4 +84,5 @@ const deleteComentario = async (req, res) =>{
   }
 }
 
-module.exports = { getComentarios, getComentarioById, postComentario, updateComentario, deleteComentario };
+
+module.exports = { getComentarios, getComentarioById, postComentario, updateComentario, deleteComentario, };

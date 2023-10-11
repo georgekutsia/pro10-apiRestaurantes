@@ -39,7 +39,6 @@
               return res.status(404).json({message: "Contraseña o Mail incorrectos"})
           }
           const token = generateSign(usuarioInfo.id, usuarioInfo.email);
-          console.log("el id usuarioinfo", usuarioInfo.id);
           return res.status(200).json({usuario:usuarioInfo, token:token})
       } catch(error){
           return res.status(500).json(error)

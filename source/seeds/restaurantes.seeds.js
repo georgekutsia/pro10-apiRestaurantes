@@ -4,7 +4,7 @@ const Restaurante = require("../models/restaurantes.model");
 const restaurantesData = require("../dbs/restaurantes.db");
 
 const DB_URL = process.env.DB_URL;
-console.log(restaurantesData);
+
 mongoose
   .connect(DB_URL)
   .then(async()=> {

@@ -1,6 +1,5 @@
 const Restaurante = require("../models/restaurantes.model");
 
-
 const getRestaurante = async(req,res)=>{
   try {
     const allRestaurantes = await Restaurante.find().populate("comments");

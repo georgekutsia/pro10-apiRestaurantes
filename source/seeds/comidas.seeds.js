@@ -4,7 +4,6 @@ const Comidas = require("../models/comidas.model");
 const comidasData = require("../dbs/comidas.db");
 
 const DB_URL = process.env.DB_URL;
-console.log(comidasData);
 mongoose
   .connect(DB_URL)
   .then(async()=> {

@@ -22,6 +22,9 @@ app.use("/restaurantes", restRouter);
 app.use("/usuarios", usuariosRoutes);
 app.use("/comentarios", comRouter);
 app.use("/comidas", comidasRoutes);
+app.get("/", (req, res) => {
+  res.send("¡API funcionando en Vercel!");
+});
 
 connect();
 app.listen(PORT, () => console.log(`Conectando al puerto ${PORT}`));

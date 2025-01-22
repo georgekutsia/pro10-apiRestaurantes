@@ -18,7 +18,11 @@ app.use(
 );
 app.use(express.json());
 
-app.use("/restaurantes", restRouter);
+app.use("/restaurantes", (req, res, next) => {
+  console.log("✅ Ruta /restaurantes detectada en el servidor.");
+  next();
+}, restRouter);
+
 app.use("/usuarios", usuariosRoutes);
 app.use("/comentarios", comRouter);
 app.use("/comidas", comidasRoutes);

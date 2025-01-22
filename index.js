@@ -26,5 +26,7 @@ app.get("/", (req, res) => {
   res.send("¡API funcionando en Vercel!");
 });
 
-connect();
-app.listen(PORT, () => console.log(`Conectando al puerto ${PORT}`));
+connect().then(() => {
+  app.listen(PORT, () => console.log(`🚀 Servidor corriendo en el puerto ${PORT}`));
+});
+

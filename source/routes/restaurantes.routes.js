@@ -11,6 +11,5 @@ restRouter.post("/", postRestaurante);
 restRouter.put("/:id", updateRestaurante);
 restRouter.delete("/:id", deleteRestaurante);
 restRouter.get("/:id", getRestauranteById);
-restRouter.delete("/:id", getRestauranteById);
 
-module.exports = restRouter
+module.exports = restRouter;

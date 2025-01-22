@@ -1,7 +1,7 @@
 const Comidas = require("../models/comidas.model");
 
 
-const getComidas = async(req,res)=>{
+const getComidas = async(req, res)=>{
   try {
     const allComidass = await Comidas.find();
     return res.status(200).json(allComidass)

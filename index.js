@@ -24,4 +24,4 @@ app.use("/comentarios", comRouter);
 app.use("/comidas", comidasRoutes);
 
 connect();
-app.listen(PORT, () => console.log(`buenas noches ${PORT}`));
+app.listen(PORT, () => console.log(`Conectando al puerto ${PORT}`));

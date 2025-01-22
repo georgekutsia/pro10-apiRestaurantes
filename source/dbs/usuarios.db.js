@@ -55,7 +55,7 @@ const usuarios = [
   },
   {
     name: "Andrés Torres",
-    email: "andres@example.com",
+    email: "andreas@example.com",
     password: "Lmn78901",
     age: 29,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692343395/restaurantes%20y%20usuarios/usuarios/jqlcici_yji5f7.webp",
@@ -64,7 +64,7 @@ const usuarios = [
   },
   {
     name: "Tim McIlrath",
-    email: "andres@example.com",
+    email: "a@example.com",
     password: "Lmn78901",
     age: 54,
     img: "https://res.cloudinary.com/dxnzcewsy/image/upload/v1692351775/restaurantes%20y%20usuarios/usuarios/JLEkvgvaWFQrmbGPBDJ7iX_i65gte.jpg",

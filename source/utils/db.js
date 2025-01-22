@@ -1,18 +1,18 @@
 const mongoose = require("mongoose");
-const dotenv = require("dotenv").config();
 
-const DB_URL= process.env.DB_URL
+const connect = async () => {
+  try {
+    await mongoose.connect(process.env.DB_URL, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      serverSelectionTimeoutMS: 5000, // ⏳ Agrega un timeout de 5 segundos
+      socketTimeoutMS: 45000, // ⏳ Agrega un timeout de 45 segundos para las consultas
+    });
+    console.log("✅ Conectado a MongoDB");
+  } catch (error) {
+    console.error("❌ Error al conectar a MongoDB:", error);
+    process.exit(1);
+  }
+};
 
-const connect = async()=> {
-    try {
-        const db = await mongoose.connect(DB_URL);
-        const {name, host} = db.connection;
-        
-        console.log(`Conectado a la base de datos ${name}`);
-
-    } catch (error) {
-        console.log(`error conectando la base de datos: ${error}`);
-    }
-}
-
-module.exports = {connect}
+module.exports = { connect };

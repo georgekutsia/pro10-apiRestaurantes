@@ -34,7 +34,7 @@ const isAdmin = async (req, res, next) => {
     }
     const token = authorization.split(" ")[1];
     if (!token) {
-      return res.status(401).json({ message: "Token no   existente" });
+      return res.status(401).json({ message: "Token no existente" });
     }
     const tokenVerified = await verifySign(token);
     if (!tokenVerified) {
